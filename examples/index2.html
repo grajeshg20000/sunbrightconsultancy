@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript"> 
+	function testAjax() {
+		alert("calling ajax");
+		
+ jQuery.ajax({
+    type: "POST",
+    url: 'your_functions_address.php',
+    success: function (obj, textstatus) {
+		           alert ("called function");
+				   try{
+					   alert("IN try");
+                  if( !('error' in obj) ) {
+					  alert("sucess");
+                      yourVariable = obj.result;
+					  alert(yourVariable);
+                  }
+                  else {
+                      alert("error");
+					  console.log(obj.error);
+					  alert(obj.error);
+					  
+                  }
+				  alert("after ifelse");
+				   }
+				   catch(exeception)
+				   {
+					   alert("exception");
+				   }
+				   
+            },
+	 error: function(xhr, status, error) {
+                            alert(error);
+                            // check status && error
+                         }
+        
+});
+	}
+	</script>
+ 
+        <script type="text/javascript"> 
+		function insertData(a,b,c,d,e,f,g) {
+		alert("Variables are " + a+b+c+d+e+f+g); 	
+		 jQuery.ajax({
+           type: "POST",
+           url: 'insertintomysql.php',
+		
+			success: function (obj, textstatus) {
+				         alert('result');
+				
+						  if( !('error' in obj) ) {
+							  yourVariable = obj.result;
+							  alert('result');
+						  }
+						  else {
+							  alert('error');
+							  console.log('error');
+						  }
+					},
+                         error: function(xhr, status, error) {
+                            alert(error);
+                            // check status && error
+                         }
+                        
+		}); 
+			alert('after php');
+	};
+		</script>
+
+</head>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+
+<?php
+function insertData() {
+   return 1;
+}
+?>
+
+<?php
+function insertData1(){
+echo "IN insertData";
+/* Attempt MySQL server connection. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+$link = mysqli_connect("localhost:3306", "root", "", "demo");
+ 
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+ 
+// Attempt insert query execution
+$sql = "INSERT INTO persons (first_name, last_name, email) VALUES ('Peter', 'Parker', 'peterparker@mail.com')";
+if(mysqli_query($link, $sql)){
+    echo "Records inserted successfully.";
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+ 
+// Close connection
+mysqli_close($link);
+}
+?> 
+  <script>
+    testAjax();
+	</script>
+</body>
+</html>

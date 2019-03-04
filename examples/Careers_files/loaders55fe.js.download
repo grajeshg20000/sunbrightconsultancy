@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){"use strict";t(window).load(function(){setTimeout(function(){t(".loader-live").fadeOut()},1e3)})});

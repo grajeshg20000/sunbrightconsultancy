@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){"use strict";t(window).scroll(function(){t(this).scrollTop()>100?t(".scrollup").fadeIn():t(".scrollup").fadeOut()}),t(".scrollup").on("click",function(){return t("html, body").animate({scrollTop:0},500),!1})});

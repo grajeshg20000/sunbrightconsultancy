@@ -1,0 +1,189 @@
+jQuery(document).ready(function(t) {
+	"use strict";
+	t(document).ready(function() {
+		function e(e) {
+			e.children().sort(function() {
+				return Math.round(Math.random()) - .5
+			}).each(function() {
+				t(this).appendTo(e)
+			})
+		}
+
+		function i(e) {
+			var i = this.currentItem;
+			t("#sync2").find(".owl-item").removeClass("synced").eq(i).addClass("synced"), void 0 !== t("#sync2").data("owlCarousel") && o(i)
+		}
+
+		function o(t) {
+			var e = a.data("owlCarousel").owl.visibleItems,
+				i = t,
+				o = !1;
+			for(var n in e)
+				if(i === e[n]) var o = !0;
+			o === !1 ? i > e[e.length - 1] ? a.trigger("owl.goTo", i - e.length + 2) : (i - 1 === -1 && (i = 0), a.trigger("owl.goTo", i)) : i === e[e.length - 1] ? a.trigger("owl.goTo", e[1]) : i === e[0] && a.trigger("owl.goTo", i - 1)
+		}
+		t("#owl-demo").owlCarousel({
+			navigation: !1,
+			slideSpeed: 3e3,
+			autoPlay: !1,
+			paginationSpeed: 400,
+			transitionStyle: "fadeUp",
+			singleItem: !0
+		}), t("#owl-demo2").owlCarousel({
+			navigation: !1,
+			slideSpeed: 2e3,
+			autoPlay: !1,
+			paginationSpeed: 200,
+			singleItem: !0
+		}), t("#owl-demo3").owlCarousel({
+			navigation: !1,
+			slideSpeed: 3e3,
+			autoPlay: !0,
+			paginationSpeed: 400,
+			singleItem: !0
+		}), t("#owl-demo3-1").owlCarousel({
+			navigation: !1,
+			slideSpeed: 3e3,
+			autoPlay: !1,
+			paginationSpeed: 400,
+			singleItem: !0
+		}), t("#owl-demo4").owlCarousel({
+			navigation: !0,
+			slideSpeed: 1e3,
+			paginationSpeed: 400,
+			singleItem: !0,
+			autoPlay: !0,
+			pagination: !1,
+			transitionStyle: "goDown"
+		}), t("#owl-demo5").owlCarousel({
+			autoPlay: 5e3,
+			items: 4,
+			itemsDesktop: [1199, 3],
+			itemsDesktopSmall: [979, 3]
+		}), t("#owl-demo6").owlCarousel({
+			autoPlay: 3e3,
+			stopOnHover: !0,
+			navigation: !0,
+			paginationSpeed: 1e3,
+			goToFirstSpeed: 2e3,
+			singleItem: !0,
+			autoHeight: !0,
+			transitionStyle: "fadeUp"
+		}), t("#owl-demo7").owlCarousel({
+			navigation: !1,
+			slideSpeed: 3e3,
+			autoPlay: !1,
+			paginationSpeed: 400,
+			singleItem: !0
+		}), t("#owl-demo7").owlCarousel({
+			navigation: !0,
+			slideSpeed: 1e3,
+			paginationSpeed: 400,
+			singleItem: !0,
+			transitionStyle: "goDown"
+		}), t("#owl-demo18").owlCarousel({
+			autoPlay: 1e3,
+			items: 4,
+			itemsDesktop: [1199, 2],
+			itemsDesktopSmall: [979, 2],
+			itemsTablet: [768, 1]
+		}), t("#owl-demo12").owlCarousel({
+			navigation: !1,
+			slideSpeed: 3e3,
+			autoPlay: !0,
+			paginationSpeed: 400,
+			transitionStyle: "fadeUp",
+			pagination: !1,
+			singleItem: !0
+		}), t("#owl-demo13").owlCarousel({
+			navigation: !1,
+			slideSpeed: 3e3,
+			autoPlay: !0,
+			paginationSpeed: 500,
+			transitionStyle: "goDown",
+			pagination: !1,
+			singleItem: !0
+		}), t("#owl-demo14").owlCarousel({
+			navigation: !1,
+			slideSpeed: 3e3,
+			autoPlay: !0,
+			paginationSpeed: 600,
+			transitionStyle: "fadeUp",
+			pagination: !1,
+			singleItem: !0
+		}), t("#owl-demo15").owlCarousel({
+			navigation: !1,
+			slideSpeed: 3e3,
+			autoPlay: !1,
+			paginationSpeed: 400,
+			singleItem: !0
+		}), t("#owl-demo16").owlCarousel({
+			navigation: !1,
+			slideSpeed: 3e3,
+			autoPlay: !1,
+			paginationSpeed: 400,
+			singleItem: !0
+		}), t("#owl-demo8").owlCarousel({
+			navigation: !0,
+			slideSpeed: 700,
+			pagination: !1,
+			navigationText: ["prev", "next"],
+			beforeInit: function(t) {
+				e(t)
+			}
+		}), t("#owl-demo9").owlCarousel({
+			navigation: !0,
+			slideSpeed: 1e3,
+			paginationSpeed: 400,
+			singleItem: !0,
+			pagination: !1,
+			transitionStyle: "goDown"
+		}), t("#owl-demo10").owlCarousel({
+			navigation: !0,
+			slideSpeed: 1e3,
+			paginationSpeed: 400,
+			singleItem: !0,
+			pagination: !0,
+			navigation: !1,
+			transitionStyle: "fadeUp"
+		}), t("#owl-demo11").owlCarousel({
+			navigation: !1,
+			slideSpeed: 3e3,
+			autoPlay: !0,
+			pagination: !1,
+			paginationSpeed: 400,
+			singleItem: !0
+		});
+		var n = t("#sync1"),
+			a = t("#sync2");
+		n.owlCarousel({
+			singleItem: !0,
+			slideSpeed: 1e3,
+			pagination: !1,
+			afterAction: i,
+			responsiveRefreshRate: 200
+		}), a.owlCarousel({
+			items: 4,
+			itemsDesktop: [1170, 4],
+			itemsDesktopSmall: [979, 4],
+			itemsTablet: [768, 4],
+			itemsMobile: [479, 2],
+			pagination: !1,
+			responsiveRefreshRate: 100,
+			afterInit: function(t) {
+				t.find(".owl-item").eq(0).addClass("synced")
+			}
+		}), t("#sync2").on("click", ".owl-item", function(e) {
+			e.preventDefault();
+			var i = t(this).data("owlItem");
+			n.trigger("owl.goTo", i)
+		}), t("#owl-demo21").owlCarousel({
+			autoPlay: 5e3,
+			stopOnHover: !0,
+			navigation: !1,
+			paginationSpeed: 1e3,
+			goToFirstSpeed: 2e3,
+			singleItem: !0
+		})
+	})
+});

@@ -1,0 +1,1467 @@
+ <div tabindex="5" class="modal fade" onclose="alert('ok')" id="mymodal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content modeltop modelwidth">
+                        <div class="modal-header">
+                            <button id="btnclose" class="close" type="button" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <h3 class="modal-title">Quick Query</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <span id="Reqtxtname" style="color:red;visibility:hidden;">Please Enter Name</span>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-user"></i>
+                                            </span>
+                                            <input name="ctl00$txtname" id="txtname" type="text" class="form-control1" value="" placeholder="Full Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span id="Reqtxtphoneno" style="color:red;visibility:hidden;">Please enter number</span>
+                                        <span id="Regtxtphoneno" style="color:red;visibility:hidden;">Mobile No. Not Valid</span>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-phone"></i>
+                                            </span>
+                                            <input name="ctl00$txtphoneno" maxlength="10" id="txtphoneno" type="text" class="form-control1" value="" placeholder="Contact Number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <span id="Reqddllocation" style="color:red;visibility:hidden;">Please select Location</span>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-university"></i>
+                                            </span>
+                                            <select name="ctl00$ddllocation" id="ddllocation" class="form-control1">
+        <option value="Select Branch">Select Branch</option>
+       <option value="Delhi">Delhi</option>
+	<option value="Gurgaon">Gurgaon</option>
+	<option value="Noida">Noida</option>
+	<option value="Greater Noida">Greater Noida</option>
+    <option value="Faridabad">Faridabad</option>
+	<option value="Bangalore">Bangalore</option>
+	<option value="Mumbai">Mumbai</option>
+	<option value="Pune">Pune</option>
+    <option value="Hyderabad">Hyderabad</option>
+	<option value="Chennai">Chennai</option>
+	<option value="Ahemdabad">Ahemdabad</option>
+	<option value="Kolkatta">Kolkatta</option>
+    
+    </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <span id="Reqddltechnology" style="color:red;visibility:hidden;">*</span>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-book"></i>
+                                        </span>
+                                        <select name="ctl00$ddltechnology" id="ddltechnology" class="form-control1">
+        <option value="Select Course">Select Course</option>
+        <option value=".Net">.Net</option>
+        <option value="J2ee">J2ee</option>
+        <option value="J2me">J2me</option>
+        <option value="Php">Php</option>
+        <option value="Embedded system">Embedded system</option>
+        <option value="Vhdl">Vhdl</option>
+        <option value="CATIA">CATIA</option>
+        <option value="C and CPP">C and CPP</option>
+        <option value="Web designing">Web designing</option>
+        <option value="Web hosting">Web hosting</option>
+        <option value="Software testing">Software testing</option>
+        <option value="Verilog HDL">Verilog HDL</option>
+        <option value="Adv. embedded system">Adv. embedded system</option>
+        <option value="Auto CAD">Auto CAD</option>
+        <option value="Matlab">Matlab</option>
+        <option value="Oracle">Oracle</option>
+        <option value="Linux">Linux</option>
+        <option value="Pcb ckt.designing">Pcb ckt.designing</option>
+        <option value="Sas">Sas</option>
+        <option value="Android">Android</option>
+        <option value="Cloud Computing">Cloud Computing</option>
+        <option value="Ios">Ios</option>
+        <option value="Seo">Seo</option>
+        <option value="Msbi">Msbi</option>
+        <option value="My sql">My sql</option>
+        <option value="Solidworks">Solidworks</option>
+        <option value="Networking">Networking</option>
+        <option value="Ethical hacking">Ethical hacking</option>
+        <option value="Vhdl">Vhdl</option>
+        <option value="Vlsi">Vlsi</option>
+        <option value="Hvac">Hvac</option>
+        <option value="Plc and scada">Plc and scada</option>
+        <option value="Verilog HDL">Verilog HDL</option>
+        <option value="Wireless and Telecom">Wireless and Telecom</option>
+        <option value="Campus recruitment preparation">Campus recruitment preparation</option>
+        <option value="CS/IT-Others">CS/IT-Others</option>
+        <option value="EC/EE-Others">EC/EE-Others</option>
+        <option value="ME/CIVIL-Others">ME/CIVIL-Others</option>
+        <option value="Big Data Hadoop">Big Data Hadoop</option>
+        <option value="Salesforce ">Salesforce </option>
+    
+    </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-6">
+                                    <span id="Reqtxtemail" style="color:red;visibility:hidden;">*</span>
+                                    <span id="Regtxtemail" style="color:red;visibility:hidden;">Email Not Valid</span>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-desktop"></i>
+                                        </span>
+                                        <input name="ctl00$txtemail" id="txtemail" type="text" class="form-control1" value="" placeholder="Email Id">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <span id="Reqtxtmsg" style="color:red;visibility:hidden;">*</span>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                        <input name="ctl00$txtmsg" id="txtmsg" type="text" class="form-control1" value="" placeholder="Message">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="form-group">
+                                <div class="col-md-6">
+                                    <br>
+                                    <div>
+                                        <span class="captcha">Captcha</span>
+                                        <img src="/Handler.ashx?captchaType=queryCaptcha" id="qCImage1">
+                                        <a href="#" style="color: #185f7c" onclick="javascript:LoadqCImg1()"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <span id="RequiredFieldValidator2" style="color:red;visibility:hidden;">*</span>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+                                        <input name="ctl00$txtCode" id="txtCode" type="text" class="form-control1" value="" placeholder="Captcha Code">
+                                    </div>
+                                </div>
+                            </div>  --> 
+                            <div class="form-group">
+                                <div class="col-md-12" style="margin-top: 10px">
+                                    <div class="input-group" style="width: 149px; margin: 0 auto">
+                                        <!-- <input type="submit" name="ctl00$Button1" value="Send Query" onclick="javascript:insertData(document.getElementById("txtname").value, document.getElementById("txtphoneno").value, document.getElementById("txtemail").value, 							document.getElementById("ddltechnology").value,document.getElementById("ddllocation").value,document.getElementById("txtmsg").value)" id="Button1" class="btn-primary btnpop"> -->          
+                                        <input type="submit" name="ctl00$Button1" value="Send Query" 
+                                         onclick="javascript:insertData()" id="Button1" class="btn-primary btnpop"> 
+                                        <!--<input type="submit" name="ctl00$Button1" value="Send Query" onclick="alert('Hello World!')" > -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bar">Because Knowledge Matters</div>
+                    </div>
+                </div>
+            </div>
+            
+    
+    <div class="mob">
+    <a data-toggle="tooltip" data-placement="right" title="Click for student zone" id="stz"><i class="fa fa-user fa fa-2x menuformobile"></i></a>
+    <a data-toggle="tooltip" data-placement="right" title="Click and see Our placement" id="plcmt"><i class="fa fa-list fa fa-2x menuformobile"></i></a>
+    <a href="../awards" title="See Event"><i class="fa fa-calendar fa fa-2x menuformobile"></i></a>
+    <a data-toggle="tooltip" data-placement="right" title="Click for get enquiry" onclick="loadenquiry()"><i class="fa fa-envelope fa fa-2x menuformobile"></i></a>
+    <a data-toggle="tooltip" data-placement="right" title="Select Language" id="lng"><i class="fa fa-globe fa fa-2x menuformobile"></i></a>
+    </div>
+    <div class="stuzon alldropdiv" style="display:none">
+    <button type="button" class="close" data-dismiss="modal" id="closid">×</button>
+    <ul class="ulm">
+    <li class="su1"><a href="http://studentszone.cetpainfotech.com/student/student_login.aspx" class="su">Student Login</a></li>
+    <li class="su1"><a href="../printslip.aspx" class="su">Generate Slip</a></li>
+    <li class="su1"><a href="../student_record.aspx" class="su">Student Record</a></li>
+    <li class="su1"><a href="../project_list.aspx" class="su">Project List</a></li>
+    <li class="su1"><a href="../verify_certificate.aspx" class="su">Verify Certificates</a></li>
+    <li class="su1"><a href="http://www.training.cetpainfotech.com/commontrainingregister.aspx" class="su">Make Payment</a></li>
+    </ul>
+    </div>
+    <div class="placement alldropdiv" style="display:none">
+    <button type="button" class="close" data-dismiss="modal" id="closid2">×</button>
+    <ul class="ulm">
+    <li class="su1"><a href="../placement" class="su">Placement Cell</a></li>
+    <li class="su1"><a href="../jobportal" class="su">Hot Jobs</a></li>
+    <li class="su1"><a href="../placementdetails" class="su">Top Placement </a></li>
+    <li class="su1"><a href="../testimonial" class="su">Placement Testimonial</a></li>
+    <li class="su1"><a href="../jobportal" class="su">Placement Drive</a></li>
+    <li class="su1"><a href="../awards" class="su">Gallery</a></li>
+    </ul>
+    </div>
+    <div class="container-fluid">
+    <a href="#serv1" class="page-scroll">
+    <div class="scrollclass" title="Scroll" aria-hidden="true" data-linktype="nav/paginate" data-isinternal="false">
+    <i class="fa fa-chevron-down"></i>
+    </div>
+    </a>
+    </div>
+    <div class="clearfix">
+    </div>
+    <div class="gap1">
+    <div class="header_bottom">
+    <div class="container">
+    <a class="navbar-brand logomobile" style="margin-top:10px"   href="../index.aspx">
+     <img src="./images/Sunbright-Consultancy-logosc1.gif" class="img-responsive logoclass"   alt="logo" title="logo cetpa"> 
+    </a>
+    <div class="navigation">
+    <div>
+    <label class="mobile_menu" for="mobile_menu"><span></span></label>
+    <input id="mobile_menu" type="checkbox">
+    <ul class="nav">
+    <li class="dropdown" style="z-index:9999"><a href="../index.aspx">Home</a>
+    </li><li class="dropdown"><a>Company</a>
+    <ul class="dropdown2">
+    <li><a href="../about">About Sunbright-Consultancy</a> </li>
+    <li><a href="../profile">Company Profile</a> </li>
+    <li><a href="../branches">Branches</a> </li>
+    <li><a href="./contact-us.html">Contact Us </a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>Courses</a>
+    <ul class="dropdown2">
+    <li class="dropdown"><a>CS/IT Course</a>
+    <ul class="dropdown3" style="z-index:9999">
+    <li><a href="../technology/net-training">.Net </a></li>
+    <li><a href="../technology/JAVA">Java </a></li>
+    <li><a href="../technology/PHP-Training">Php </a></li>
+    <li><a href="../technology/ios-training">IOS</a></li>
+    <li><a href="../technology/sas-training">Sas </a></li>
+    <li><a href="../technology/erp-training">ERP </a></li>
+    <li><a href="../technology/SEO-Training">SEO </a></li>
+    <li><a href="../technology/MOC-Training">MOC On-Demand </a></li>
+    <li><a href="../technology/Android-Training">Android </a></li>
+    <li><a href="../technology/SALES-FORCE-Training">SALES FORCE</a></li>
+    <li><a href="../technology/CCC-BCC-Training">CCC And BCC </a></li>
+    <li><a href="../technology/C-Language-Training">C Language </a></li>
+    <li><a href="../technology/Web-Designing">Web Designing </a></li>
+    <li><a href="../technology/Advance-dot-net-training">Adv. Dot Net </a></li>
+    <li><a href="../technology/SOFTWARE-TESTING">Software Testing </a></li>
+    <li><a href="../technology/cloud-computing-Training">Cloud Computing </a></li>
+    <li><a href="../technology/digital-marketing-training">Digital Marketing</a></li>
+    <li><a href="../technology/r-programming-training">R Programming</a></li>
+    <li><a href="../technology/angularjs-training">Angular JS</a></li>
+    <li><a href="../technology/mcse-training">MCSE Training</a></li>
+    <li><a href="../technology/mcp-training">MCP Training</a></li>
+    <li><a href="../technology/microsoft-azure-training">Microsoft Azure</a></li>
+    <li><a href="../technology/artificial-intelligence-training">Artificial Intelligence</a></li>
+    <li><a href="../technology/aws-training">AWS Training</a></li>
+    <li><a href="../technology/itil-training">ITIL Training</a></li>
+    <li><a href="../technology/citrix-training">CITRIX Training</a></li>
+    <li><a href="../technology/mcsa-training">MCSA Training</a></li>
+    <li><a href="../technology/data-science-using-sas">.Net </a></li>
+    <li><a href="../technology/microsoft-dynamics-training">Microsoft Dynamics Training</a></li>
+    <li><a href="../technology/pmp-training">PMP Training</a></li>
+    <li><a href="../technology/scrum-master-training">scrum master Training</a></li>
+    <li><a href="../technology/sharepoint-training">Share Point Training</a></li>
+    <li><a href="../technology/vmware-training">Vm Ware Training</a></li>
+    <li><a href="../technology/blockchain-training">Blockchain Training</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>OS/Database</a>
+    <ul class="dropdown3">
+    <li><a href="../technology/Microsoft-Business-Intelligence-Training">MSBI</a></li>
+    <li><a href="../technology/UNIX">Unix</a></li>
+    <li><a href="../technology/MY-SQL-Training">MY SQL</a></li>
+    <li><a href="../technology/Oracle-Training">Oracle</a></li>
+    <li><a href="../technology/oracle-dba-Training">Oracle DBA</a></li>
+    <li><a href="../technology/REDHAT-LINUX-Training">REDHAT Linux</a></li>
+    <li><a href="../technology/BIG-DATA-HADOOP-Training">BIG DATA HADOOP</a></li>
+    <li><a href="../technology/data-science">Data Science</a></li>
+    <li><a href="../technology/MS-SQL-Server-Training">MS SQL Server</a></li>
+    <li><a href="../technology/oracle-developer-Training">Oracle Developer</a></li>
+    <li><a href="../technology/Oracle-Data-Guard-Training">Oracle Data Guard</a></li>
+    <li><a href="../technology/WorkforceDevelopement">Oracle(WDP)</a></li>
+    <li><a href="../technology/RAC-Training">Oracle(RAC)</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>EC/EE/EI</a>
+    <ul class="dropdown3" style="z-index:9999">
+    <li><a href="../technology/VHDL">VHDL</a></li>
+    <li><a href="../technology/Verilog-HDL">Verilog HDL</a></li>
+    <li><a href="../technology/vlsi-training">VLSI</a></li>
+    <li><a href="../technology/avr-training">AVR</a></li>
+    <li><a href="../technology/PSPICE">PSPICE</a></li>
+    <li><a href="../technology/matlab-training">Matlab</a></li>
+    <li><a href="../technology/iot-training">IOT</a></li>
+    <li><a href="../technology/machine-learning">Machine Learning</a></li>
+    <li><a href="../technology/arm-training">ARM</a></li>
+    <li><a href="../technology/HVAC">HVAC</a></li>
+    <li><a href="../technology/Robotics-Training">Robotics</a></li>
+    <li><a href="../technology/Industrial-Automation(PLC-and-SCADA)">PLC &amp; SCADA</a></li>
+    <li><a href="../technology/system-verilog-Training">System Verilog</a></li>
+    <li><a href="../technology/Verilog-HDL">Verilog HDL</a></li>
+    <li><a href="../technology/pcb-and-circuit-design">PCB &amp; CKT Design</a></li>
+    <li><a href="../technology/Adv-Embedded-System">Adv.Embedded Systems</a></li>
+    <li><a href="../technology/embedded-system">Embedded Systems</a></li>
+    <li><a href="../technology/embedded-system">Embedded Systems(8051)</a></li>
+    <li><a href="../technology/wireless-and-telecom-Training">Wireless and Telecom</a></li>
+    <li><a href="../technology/Industrial-Automation(PLC-and-SCADA)">Industrial Automation</a></li>
+    <li><a href="../technology/linux-internals-and-rtos-Training">Linux Internal and RTOS</a></li>
+    <li><a href="../technology/hardware-in-electronics">Hardware in electronic</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>MECH/CIVIL</a>
+    <ul class="dropdown3" style="z-index:9999">
+    <li><a href="../technology/CATIA-Training">CATIA</a></li>
+    <li><a href="../technology/3ds-Max-training">3ds MAX</a></li>
+    <li><a href="../technology/ansys-software-training">Ansys Training</a></li>
+    <li><a href="../technology/primavera-training">PRIMAVERA Training</a></li>
+    <li><a href="../technology/pro-e-(creo)-Training">PRO-E/CREO</a></li>
+    <li><a href="../technology/autocad-training">AutoCAD</a></li>
+    <li><a href="../technology/staad-pro-Training">STAAD PRO</a></li>
+    <li><a href="../technology/solid-works-training">SOLIDWORKS</a></li>
+    <li><a href="../technology/revit-mep-training">REVIT MEP</a></li>
+    <li><a href="../technology/revit-architecture-training">REVIT ARCHITECTURE</a></li>
+    <li><a href="../technology/revit-structures-training">REVIT STRUCTURE</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>Networking</a>
+    <ul class="dropdown3">
+    <li><a href="../technology/CCNA-Training">CCNA</a></li>
+    <li><a href="../technology/CCNP-Training">CCNP</a></li>
+    <li><a href="../technology/Networking-Training">Networking</a></li>
+    <li><a href="../technology/CCIE-Security">CCIE Security</a></li>
+    <li><a href="../technology/CCNA-security">CCNA Security</a></li>
+    <li><a href="../technology/CCNP-security">CCNP Security</a></li>
+    <li><a href="../technology/Ethical-Hacking-Training">Ethical Hacking</a></li>
+    <li><a href="../technology/CCIE-Routing-and-switching">CCIE Routing &amp; Switching</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>Microsoft</a>
+    <ul class="dropdown3" style="z-index:9999">
+    <li><a href="../technology/net-training">Dot Net</a></li>
+    <li><a href="../technology/mcse-training">MCSE</a></li>
+    <li><a href="../technology/ria-and-html5">HTML</a></li>
+    <li><a href="../technology/css3-training">CSS3</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>Oracle</a>
+    <ul class="dropdown3" style="z-index:9999">
+    <li><a href="../technology/JAVA">Java</a></li>
+    <li><a href="../technology/PHP-Training">Php</a></li>
+    <li><a href="../technology/Oracle-Training">Oracle</a></li>
+    <li><a href="../technology/MY-SQL-Training">MySql</a></li>
+    <li><a href="../technology/WorkforceDevelopement">WorkForce Developement</a></li>
+    <li><a href="../technology/blockchain-training">Blockchain Training</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>Nuvoton</a>
+    <ul class="dropdown3" style="z-index:9999">
+    <li><a href="../technology/arm-training">Arm</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>AutoDesk</a>
+    <ul class="dropdown3" style="z-index:9999">
+    <li><a href="../technology/autocad-training">AutoCad</a></li>
+    <li><a href="../technology/autodesk-revit-training">Autodesk revit</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>Panasonic</a>
+    <ul class="dropdown3" style="z-index:9999">
+    <li><a href="../technology/Industrial-Automation(PLC-and-SCADA)">plc and scada
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>Sap(erp)</a>
+    <ul class="dropdown3" style="z-index:9999">
+    <li><a href="../technology/sap-abap-training">sap-abap</a></li>
+    <li><a href="../technology/sap-basis-training">sap-basis</a></li>
+    <li><a href="../technology/sap-fico-training">sap-fico</a></li>
+    <li><a href="../technology/sap-hr-training">sap-hr</a></li>
+    <li>
+    <a href="../technology/sap-mm-training">sap-mm</a></li>
+    <li><a href="../technology/sap-pp-training">sap-pp</a></li>
+    <li><a href="../technology/sap-sd-training">sap-sd</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a>Other</a>
+    <ul class="dropdown3" style="z-index:9999">
+    <li><a href="../technology/ria-and-html5">Html 5</a></li>
+    <li><a href="../technology/css3-training">Css 3</a></li>
+    <li><a href="../technology/sas-training">SAS</a></li>
+    <li><a href="../technology/wordpress-training">WordPress</a></li>
+    <li><a href="../technology/magento-training">Magento</a></li>
+    <li><a href="../technology/dreamweaver-training">Dreamweaver</a></li>
+    <li><a href="../technology/drupal-training">Drupal</a></li>
+    </ul>
+    </li>
+    </ul>
+    </li><li class="dropdown"><a>Services</a>
+    <ul class="dropdown2" style="z-index:9999">
+    <li><a href="../professionalTraining">Professional Training</a> </li>
+    <li><a href="../corporate-training.html">Corporate training</a> </li>
+    <li><a href="../campus-training.html">College campus training</a> </li>
+    <li><a href="../overseas-training.html">Overseas &amp; Online Training</a> </li>
+    <li><a href="../summer/summer_trg_detail.aspx">Summer Training</a> </li>
+    <li><a href="../industrialTraining">6 Months Industrial Training</a> </li>
+    <li><a href="../winter/winter_trg_details.aspx">Winter Training</a> </li>
+    </ul>
+    </li>
+    <li class="dropdown"><a href="http://www.training.cetpainfotech.com/commontrainingregister.aspx?training=Summer%20Training">Online Registration</a></li>
+    <div class="clearfix"></div>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="navbar-fixed-top classmobile" id="tops">
+    <nav class="navbar navbar-default classzindexmenu" role="navigation">
+    <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="./index.html">
+    
+    
+    </a>
+    </div>
+    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height:1px">
+    <ul class="nav navbar-nav">
+    <li class="dropdown mega-dropdown">
+    <a class="dropdown-toggle" style="width:249px">
+    <div style="color:white">
+    
+    <i class="fa fa-phone"></i>&nbsp;&nbsp;Toll Free :&nbsp;91-9810385892<br>
+    <i class="fa fa-phone"></i>&nbsp;&nbsp;HelpLine :&nbsp;91-9810385892  </div>
+    </a>
+    </li>
+    <li class="dropdown mega-dropdown">
+    <a class="dropdown-toggle" style="width:200px"><span>query@Sunbright-Consultancy.com</span></a>
+    </li>
+    <!-- <li class="dropdown mega-dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user icolclass logoicon"></i><span>Student Zone </span></a>
+    <div class="dropdown-menu mega-dropdown-menu my">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="col-md-2 borderradiusclass1">
+    <a href="http://studentszone.cetpainfotech.com/student/student_login.aspx"><i class="fa fa-sign-in fa fa-2x iconfa"></i>
+    <div class="span1">Student Login</div>
+    </a>
+    </div>
+    <div class="col-md-2 borderradiusclass1">
+    <a href="../printslip.aspx"><i class="fa fa-file-text-o fa fa-2x iconfa"></i>
+    <div class="span1">Generate Slip</div>
+    </a>
+    </div>
+    <div class="col-md-2 borderradiusclass1">
+    <a href="../student_record.aspx"><i class="fa fa-folder-open fa fa-2x iconfa"></i>
+    <div class="span1">Student Record</div>
+    </a>
+    </div>
+    <div class="col-md-2 borderradiusclass1">
+    <a href="../project_list.aspx"><i class="fa fa-list fa fa-2x iconfa"></i>
+    <div class="span1">Project List</div>
+    </a>
+    </div>
+    <div class="col-md-2 borderradiusclass1">
+    <a href="../verify_certificate.aspx"><i class="fa fa-check fa fa-2x iconfa"></i>
+    <div class="span1">Verify Certificates</div>
+    </a>
+    </div>
+    <div class="col-md-2 borderradiusclass1">
+    <a href="http://www.training.cetpainfotech.com/commontrainingregister.aspx?training=Summer%20Training"><i class="fa fa-paypal fa fa-2x iconfa"></i>
+    <div class="span1">Make Payment</div>
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li class="dropdown mega-dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list icolclass logoicon"></i><span>Placement</span></a>
+    <div class="dropdown-menu mega-dropdown-menu my2">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="col-md-2 borderradiusclass1">
+    <a href="../placement"><i class="fa fa-dashboard fa fa-2x iconfa"></i>
+    <div class="span1">Placement Cell</div>
+    </a>
+    </div>
+    <div class="col-md-2 borderradiusclass1">
+    <a href="../jobportal"><i class="fa fa-users fa fa-2x iconfa"></i>
+    <div class="span1">Hot Jobs </div>
+    </a>
+    </div>
+    <div class="col-md-2 borderradiusclass1">
+    <a href="../placementdetails"><i class="fa fa-gift fa fa-2x iconfa"></i>
+    <div class="span1">Top Placement </div>
+    </a>
+    </div>
+    <div class="col-md-2 borderradiusclass1">
+    <a href="../testimonial"><i class="fa fa-list fa fa-2x iconfa"></i>
+    <div class="span1">Placement Testimonial</div>
+    </a>
+    </div>
+    <div class="col-md-2 borderradiusclass1">
+    <a href="../jobportal"><i class="fa fa-yelp fa fa-2x iconfa"></i>
+    <div class="span1">Upcoming Drive</div>
+    </a>
+    </div>
+    <div class="col-md-2 borderradiusclass1">
+    <a href="../awards"><i class="fa fa-picture-o fa fa-2x iconfa"></i>
+    <div class="span1">Gallery</div>
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li class="dropdown mega-dropdown" id="eventimgdiv">
+    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar icolclass logoicon"></i><span>Events</span></a>
+    <div class="dropdown-menu mega-dropdown-menu my3">
+    <div class="row">
+    <div class="row">
+    <div class="col-md-9">
+    <p class="ps3">No 1 Award Winning Training Company </p>
+    </div>
+    <div class="col-md-3">
+    <div class="controls pull-right hidden-xs">
+    <a class="left fa fa-chevron-left btn btn-info" href="#carousel-example" data-slide="prev"></a>
+    <a class="right fa fa-chevron-right btn btn-info" href="#carousel-example" data-slide="next"></a>
+    </div>
+    </div>
+    </div>
+    <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+    <div class="carousel-inner">
+    <div class="item active">
+    <div class="row">
+    <div class="col-sm-3">
+    <div class="ih-item square2 colored effect3 bottom_to_top">
+    <a href="../awards">
+    <div class="img bg-c1">
+    </div>
+    <div class="info">
+    <h3>Awarded Best IT, Embedded &amp; Cad Training Company</h3>
+    <p>In Year 2014, by Ms. Soha Ali Khan</p>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="ih-item square2 colored effect3 bottom_to_top">
+    <a href="../awards">
+    <div class="img bg-c2">
+    </div>
+    <div class="info">
+    <h3>Best Industrial Training Organisation Noida</h3>
+    <p>in year 2011, by Mr. Chetan Bhagat</p>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="ih-item square2 colored effect3 bottom_to_top">
+    <a href="../awards">
+    <div class="img bg-c3">
+    </div>
+    <div class="info">
+    <h3>Awarded Best IT, Embedded &amp; Cad Training Company</h3>
+    <p>in year 2012, by Mr. Shashi Tharoor</p>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="ih-item square2 colored effect3 bottom_to_top">
+    <a href="../awards">
+    <div class="img bg-c4">
+    </div>
+    <div class="info">
+    <h3>Brand Achievers Award 2015</h3>
+    <p>by Mr. Shekhar Suman</p>
+    </div>
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="item">
+    <div class="row">
+    <div class="col-sm-3">
+    <div class="ih-item square2 colored effect3 bottom_to_top">
+    <a href="../awards">
+    <div class="img bg-c5">
+    </div>
+    <div class="info">
+    <h3>State Excellence Award 2013</h3>
+    <p>by Pooja Movies Creation (PMC)</p>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="ih-item square2 colored effect3 bottom_to_top">
+    <a href="../awards">
+    <div class="img bg-c6">
+    </div>
+    <div class="info">
+    <h3>Industry Academia Meet</h3>
+    <p>6th September, 2015</p>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="ih-item square2 colored effect3 bottom_to_top">
+    <a href="../awards">
+    <div class="img bg-c7">
+    </div>
+    <div class="info">
+    <h3>Industry Academia Meet</h3>
+    <p>6th September, 2015</p>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="ih-item square2 colored effect3 bottom_to_top">
+    <a href="../awards">
+    <div class="img bg-c8">
+    </div>
+    <div class="info">
+    <h3>Industry Academia Meet</h3>
+    <p>6th September, 2015</p>
+    </div>
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </li> -->
+    <li class="dropdown mega-dropdown mega-menu" id="topsearch">
+    <a class="search-trigger" data-toggle="dropdown"><i class="fa fa-search icolclass logoicon"></i><span>Search</span></a>
+    <div class="search" style="display:none">
+    <div class="input-group">
+    <div id="header_Panel2" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'header_btnSearch')">
+        
+    <input name="ctl00$header$TopTextBoxSearch" type="text" id="TopTextBoxSearch" class="form-control" autocomplete="off" placeholder="Type to search and hit enter..">
+    
+    </div>
+    </div>
+    </div>
+    <script>$(".search-trigger").on("click",function(){$(".search").slideToggle("slow",function(){});$("#topsearch i").toggleClass("fa-times","fa-search")});</script>
+    </li>
+    </ul>
+    <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+    </nav>
+    <nav class="navbar nav_bottom" role="navigation">
+    <div class="container">
+    <div class="navbar-header nav_2">
+    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="clearfix"></div>
+    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+    <ul class="nav navbar-nav nav_1">
+    <li id="home" class="limobileclass"><a href="../index">Home</a>
+    </li>
+    <li class="dropdown mega-dropdown limobileclass">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company<span class="caret"></span></a>
+    <div class="dropdown-menu mega-dropdown-menu my4">
+    <div class="container-fluid companydiv">
+    <div class="row">
+    <div class="col-md-12" style="margin-bottom:20px">
+    <div class="col-md-4 borderradiusclass">
+    <a href="aboutus.html">
+    <div class="col-md-2">
+    <img data-src="./images/Sunbright-Consultancy-about.png" class="circle-price1">
+    </div>
+    <div class="col-md-10">
+    <h4 class="h4clas">About Sunbright-Consultancy</h4>
+    <p class="pclass">CETPA Believes in Quality not in Quantity Because Knowledge Matters</p>
+    </div>
+    </a>
+    </div>
+    
+    <div class="col-md-4 borderradiusclass1">
+    <a href="branches.html">
+    <div class="col-md-2">
+    <img data-src="./images/Sunbright-Consultancy-branches.png" class="circle-price1">
+    </div>
+    <div class="col-md-10">
+    <h4 class="h4clas">Branches</h4>
+    <p class="pclass">We are Making Connectivity Easier</p>
+    </div>
+    </a>
+    </div>
+    <div class="col-md-4 borderradiusclass1">
+    <a href="./contact-us.html">
+    <div class="col-md-2">
+    <img data-src="./images/Sunbright-Consultancy-location.png" class="circle-price1">
+    </div>
+    <div class="col-md-10">
+    <h4 class="h4clas">Contact Us</h4>
+    <p class="pclass">Find the Ideal Training For You</p>
+    </div>
+    </a>
+    </div>
+    </div>
+    
+    
+    </div>
+    </div>
+    </div>
+    </li>
+    <li class="dropdown mega-dropdown limobileclass newmegamenu">
+    <a href="#technology" class="dropdown-toggle page-scroll" data-toggle="dropdown">Workshops<span class="caret"></span></a>
+    <div class="dropdown-menu mega-dropdown-menu my5" id="newmegamenu">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-3">
+    <div id="header_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'header_btnSearch')">
+        
+    <input name="ctl00$header$txtSearch" type="text" id="txtSearch" class="newsearch" placeholder="Search..">
+    <input type="submit" name="ctl00$header$btnSearch" value="" id="header_btnSearch">
+    
+    </div>
+   <h4>POPULAR COURSES</h4>
+    <ul class="list-menu">
+    <li><a href="../technology/JAVA">Java Training</a></li>
+    <li><a href="../technology/python-Training">Python Training</a></li>
+    <li><a href="../technology/net-training">Dot Net Training</a></li>
+    <li><a href="../technology/Android-Training">Android Training</a></li>
+    <li><a href="../technology/PHP-Training">Php Training</a> </li>
+    <li><a href="../technology/sap-training">Sap Training</a> </li>
+    <li><a href="../technology/angularjs">Angular JS Training</a></li>
+    <li><a href="../technology/BIG-DATA-HADOOP-Training">Big Data Training</a></li>
+    <li><a href="../technology/data-science-using-sas-training">Data Science Using Sas Training</a></li>
+    <li><a href="../technology/artificial-intelligence-training">Artificial Intelligence Training</a></li>
+    </ul>
+    </div>
+    <div class="col-md-9">
+    <ul class="tabs">
+    <li><a class="active" href="#section-1">ORACLE </a></li>
+    <li><a href="#section-2">MICROSOFT</a></li>
+    <li><a href="#section-3">MOBILE DEVELOPMENT</a></li>
+    <li><a href="#section-4">WEB DEVELOPMENT</a></li>
+    <li><a href="#section-5">CLOUD COMPUTING</a></li>
+    <li><a href="#section-6">BIG DATA</a></li>
+    <li><a href="#section-7">POPULAR COURSES</a></li>
+    <li><a href="#section-8">DATABASE</a></li>
+    <li><a href="#section-9">PROJECT MANAGEMENT</a></li>
+    <li><a href="#section-10">ADOBE</a></li>
+    <li><a href="#section-11">CMS</a></li>
+    <li><a href="#section-12">ERP</a></li>
+    <li><a href="#section-13">SOFTWARE TESTING</a></li>
+    <li><a href="#section-14">MORE</a></li>
+
+    </ul>
+    <ul class="tabs-content">
+
+    <!-- ORACLE -->
+    <li class="active" id="section-1">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">JAVA</li> </ul> 
+     <ul> <li><a  href="java-training.html">Java EE</a></li> </ul>
+     <ul> <li><a href="java-training.html">Java SE </a></li></ul>
+     <ul> <li class="dropdown-header font-large">Oracle Database</li> </ul> 
+     <ul> <li><a  href="database-administration.html">Database Administration</a></li> </ul>
+     <ul> <li><a href="oracle-data-warehousing.html">Data Warehousing</a></li></ul>
+     <ul> <li><a href="oracle-programing-development.html">Programming and Development </a></li></ul>
+     <ul> <li><a href="/laundry-services/wash-iron">Database Security </a></li></ul>
+     <ul> <li><a  href="my-sql-training.html">MySQL</a></li> </ul>
+     <ul> <li><a href="business-intelligence-training.html">Business Intelligence </a></li></ul>
+     <ul> <li><a  href="oracle-database-12c-ocp-dba-certification-training.html">OCP DBA</a></li> </ul>
+     <ul> <li><a href="oracle-database-12c-rac-administration-training.html">12c: RAC Administration </a></li></ul>
+    </div>
+     <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Oracle Middleware</li> </ul> 
+     <ul> <li><a  href="oracle-weblogic-server-12c-administration-i-training.html">WebLogic Server 12c: Admin</a></li> </ul>
+     <ul> <li><a href="oracle-weblogic-server-11g-advance-administration-training.html">WebLogic: Advanced Administration </a></li></ul>
+     <ul> <li><a  href="oracle-soa-suite-12c-build-composite-applications-training.html">SOA Suite 11g: Administration</a></li> </ul>
+     <ul> <li><a href="oracle-bpm-11g-modeling-training.html">Oracle BPM 11g Modeling </a></li></ul>
+     <ul> <li><a href="oracle-bpm-12c-essentials-training.html">Oracle BPM 12c: Essentials </a></li></ul>
+     </div>
+      <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Oracle Cloud</li> </ul> 
+     <ul> <li><a  href="oracle-em-cloud-control-12c-install-upgrade-training.html">Oracle Enterprise Manager Cloud Control 12c Install & Upgrade</a></li> </ul>
+     <ul> <li><a href="using-oracle-em-cloud-control-12c-training.html">Using Oracle Enterprise Manager Cloud Control 12c </a></li></ul>
+     <ul> <li class="dropdown-header font-large">Oracle Linux</li> </ul> 
+     <ul> <li><a  href="oracle-linux-7-system-administration-training.html">Linux 7: System Administration</a></li> </ul>
+     <ul> <li><a href="oracle-linux-advanced-administration-training.html">Linux Advanced Administration </a></li></ul>
+     </div>
+ 
+    </div>
+    </li>
+
+
+     <!--  Microsoft  -->
+    <li class="active" id="section-2">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Visual Studio .NET</li> </ul> 
+     <ul> <li><a  href="../technology/java_se">.NET</a></li> </ul>
+     <ul> <li><a href="/laundry-services/wash-iron"> .NET Advance </a></li></ul>
+     <ul> <li><a  href="csharp-essentials-training.html">C# Essentials</a></li> </ul>
+     <ul> <li><a href="csharp-essentials-training.html"> C# Advance </a></li></ul>
+     <ul> <li><a  href="asp-net-mvc-5-training.html">ASP.Net MVC 5</a></li> </ul>
+     <ul> <li><a href="microsoft-visual-studio-2015-training.html"> Microsoft Visual Studio 2015 </a></li></ul>
+
+    </div>
+
+    <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Office 365</li> </ul> 
+     <ul> <li><a href="ms-office-365-training.html"> Office 365 complete </a></li></ul>
+     <ul> <li class="dropdown-header font-large">Microsoft Office</li> </ul> 
+     <ul> <li><a  href="microsoft-excel-2013-training.html">Microsoft Office Excel 2013 </a></li> </ul>
+     <ul> <li><a href="microsoft-word-2013-training.html">Microsoft Office Word 2013</a></li></ul>
+     <ul> <li><a href="microsoft-powerpoint-2013-training.html">Microsoft PowerPoint 2013 </a></li></ul>
+     <ul> <li><a href="excel-2013-programming-vba-training.html">Excel 2013 VBA </a></li></ul>
+    </div>
+
+    </div>
+    </li>  <!-- section-2 -->  
+
+  <!--  MOBILE DEVELOPMENT  -->
+    <li class="active" id="section-3">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="ios-apps-xcode-5-development-training.html">iOS Application Development</a></li> </ul>
+     <ul> <li><a href="ios-application-development-swift-training.html"> iOS App Development using Swift </a></li></ul>
+     <ul> <li><a  href="objective-c-programming-concepts-training.html"> Objective-C</a></li> </ul>
+     <ul> <li><a href="phonegap-mobile-app-training.html"> PhoneGap for Mobile Application </a></li></ul>
+     <ul> <li><a  href="google-associate-android-developer-training.html">Google- Associate Android Developer</a></li> </ul>
+
+    </div>
+
+    </div>
+    </li>  <!-- section-3 -->  
+
+
+  <!--  WEB DEVELOPMENT  -->
+    <li class="active" id="section-4">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="html5-css3-training.html">Responsive Web Design</a></li> </ul>
+     <ul> <li><a href="apps-development-angular-js-professionals-training.html"> App Development using AngularJS </a></li></ul>
+     <ul> <li><a  href="bootstrap-framework-training.html">Bootstrap Framework</a></li> </ul>
+     <ul> <li><a href="html5-css3-training.html"> HTML5 and CSS3 </a></li></ul>
+     <ul> <li><a  href="javascript-jquery-training.html">JavaScript and jQuery</a></li> </ul>
+     <ul> <li><a href="php-mysql-developer-training.html"> PHP Developer </a></li></ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-4 -->  
+
+  <!--  CLOUD COMPUTING  -->
+    <li class="active" id="section-5">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="aws-technical-essentials-training.html">Amazon Web Services</a></li> </ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-5 -->  
+
+  <!--  BIG DATA  -->
+    <li class="active" id="section-6">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="hadoop-developer-training.html">Hadoop Developer</a></li> </ul>
+     <ul> <li><a href="master-hadoop-administration-training.html"> Hadoop Administration </a></li></ul>
+     <ul> <li><a  href="apache-hadoop-data-analyst-training.html">Hadoop Data Analyst</a></li> </ul>
+     <ul> <li><a href="mastering-apache-hadoop-training.html"> Mastering Apache Hadoop </a></li></ul>
+     <ul> <li><a  href="hadoop-ecosystem-essentials-training.html">Hadoop Ecosystem Essentials</a></li> </ul>
+     <ul> <li><a href="programming-r-training.html"> Programming with R </a></li></ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-6 -->  
+
+    <!--  POPULAR COURSES  -->
+    <li class="active" id="section-7">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="angular-js-java-web-apps-development-training.html">Develop Java Web Apps with AngularJS</a></li>
+      </ul>
+     <ul> <li><a href="ootp-object-oriented-thought-process-training.html"> Object Oriented Thought Process (OOTP) </a></li>
+     </ul>
+     <ul> <li><a  href="java-persistence-hibernate-training.html">Java Persistence with Hibernate</a></li> 
+     </ul>
+     <ul> <li><a  href="spring-core-training.html">Spring</a></li> 
+     </ul>
+     <ul> <li><a href="spring-mvc-training.html"> Spring MVC </a></li> 
+     </ul>
+     </div>
+     <div class="col-md-4">
+     <ul> <li><a  href="soa-adoption-architecture-fundamentals-training.html">SOA Adoption and Architecture Fundamentals</a></li> </ul>
+     <ul> <li><a  href="mongo-db-training.html">MongoDB</a></li> </ul>
+     <ul> <li><a  href="cassandra-training.html">Cassandra</a></li> </ul>
+     <ul> <li><a  href="spring-hibernate-training.html">Spring & Hibernate</a></li> </ul>
+     <ul> <li><a  href="cloud-fundamentals-training.html">Cloud Fundamentals</a></li> </ul>
+    </div>
+
+
+    </div>
+    </li>  <!-- section-7 -->  
+
+  <!--  DATABASE  -->
+    <li class="active" id="section-8">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Oracle Database</li> </ul> 
+     <ul> <li><a  href="database-administration.html">Database Administration</a></li> </ul>
+     <ul> <li><a href="oracle-data-warehousing.html">Data Warehousing</a></li></ul>
+     <ul> <li><a href="oracle-programing-development.html">Programming and Development </a></li></ul>
+     <ul> <li><a href="/laundry-services/wash-iron">Database Security </a></li></ul>
+     <ul> <li><a  href="my-sql-training.html">MySQL</a></li> </ul>
+     <ul> <li><a href="business-intelligence-training.html">Business Intelligence </a></li></ul>
+     <ul> <li><a  href="oracle-database-12c-ocp-dba-certification-training.html">OCP DBA</a></li> </ul>
+     <ul> <li><a href="oracle-database-12c-rac-administration-training.html">12c: RAC Administration </a></li></ul>
+
+    </div>
+
+    <!-- <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Microsoft SQL Server</li> </ul> 
+     <ul> <li><a href="/laundry-services/wash-iron"> Programming with SQL Server  </a></li></ul>
+     <ul> <li class="dropdown-header font-large">SQL Server Administration</li> </ul> 
+    </div>  -->
+
+    </div>
+    </li>  <!-- section-8 -->  
+
+  <!--  PROJECT MANAGEMENT  -->
+    <li class="active" id="section-9">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="pmp-project-management-professional-certification-training.html">PMP</a></li> </ul>
+     <ul> <li><a href="pmp-and-ms-project-2013-combo-training.html"> PMP® and MS project 2013 </a></li></ul>
+     <ul> <li><a href="agile-methodology-training.html"> PMI- Agile Certified Practioner (ACP)</a></li></ul>
+     <ul> <li><a href="professionals-scrum-master-certification-training.html"> Scrum Master Training </a></li></ul>
+     <ul> <li><a  href="microsoft-specialist-managing-project-with-ms-project-2013-training.html">Microsoft Project 2013</a></li> </ul>
+     <ul> <li><a href="microsoft-project-professional-server-2013-combo-training.html"> Microsoft Project & Server 2013 </a></li></ul>
+     <ul> <li><a  href="managing-project-server-2013-training.html">Managing Project Server 2013</a></li> </ul>
+     <ul> <li><a href="six-sigma-yellow-belt-certification-training.html"> Lean Six Sigma Yellow Belt </a></li></ul>
+     <ul> <li><a href="lean-six-sigma-green-belt-certification-training.html"> Lean Six Sigma Green Belt </a></li></ul>
+     <ul> <li><a href="togaf-training.html"> TOGAF 9.1 </a></li></ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-9 -->  
+
+  <!--  ADOBE  -->
+    <li class="active" id="section-10">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="adobe-cc-graphic-design-training.html">Graphic Design</a></li> </ul>
+     <ul> <li><a href="adobe-cc-web-design-training.html"> Web Design </a></li></ul>
+     <ul> <li><a  href="adobe-photoshop-cc-training.html">Photoshop</a></li> </ul>
+     <ul> <li><a href="adobe-dreamweaver-cc-training.html"> Dreamweaver </a></li></ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-10 -->  
+
+  <!--  CMS  -->
+    <li class="active" id="section-11">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="drupal-training.html">Drupal</a></li> </ul>
+     <ul> <li><a href="wordpress-training.html"> Wordpress </a></li></ul>
+     <ul> <li><a  href="joomla-training.html">Joomla</a></li> </ul>
+     <ul> <li><a  href="magento-training.html">Magento</a></li> </ul>
+
+    </div>
+
+    </div>
+    </li>  <!-- section-11 -->  
+
+  <!--  ERP  -->
+    <li class="active" id="section-12">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="sap-abap-training.html">SAP ABAP</a></li> </ul>
+     <ul> <li><a href="sap-basis-training.html"> SAP BASIS </a></li></ul>
+     <ul> <li><a  href="sap_fico-training.html">SAP FICO</a></li> </ul>
+     <ul> <li><a href="sap-hr-training.html"> SAP HR </a></li></ul>
+     <ul> <li><a  href="sap-hd-training.html">SAP HD</a></li> </ul>
+     <ul> <li><a href="sap-pp-training.html"> SAP PP </a></li></ul>
+
+    </div>
+
+    
+    </div>
+    </li>  <!-- section-12 -->  
+
+  <!--  SOFTWARE TESTING  -->
+    <li class="active" id="section-13">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="apache-jmeter-performance-load-testing-training.html">Load Testing with Jmeter</a></li> </ul>
+     <ul> <li><a href="soapui-web-services-training.html"> SoapUI Web Services Testing </a></li></ul>
+     <ul> <li><a  href="certified-software-tester-cste-training.html">Certified Software Tester (CSTE)</a></li> </ul>
+     <ul> <li><a href="owasp-testing-training.html"> OWASP Testing </a></li></ul>
+     <ul> <li><a  href="selenium-2-webdriver-advance-training.html">Selenium</a></li> </ul>
+
+    </div>
+
+    </div>
+    </li>  <!-- section-13 -->  
+
+  <!--  MORE  -->
+    <li class="active" id="section-14">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="python-training.html">Python</a></li> </ul>
+     <ul> <li><a href="search-engine-optimization-training.html"> SEO Training </a></li></ul>
+     <ul> <li><a href="mean-stack-training.html"> Mean Stack Training </a></li></ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-14 -->  
+
+   </ul>
+   </div>  
+
+
+   <!-- Tab ends here -->
+
+   <!-- Online Tabs -->
+   
+   <li class="dropdown mega-dropdown limobileclass newmegamenu">
+    <a href="#technology" class="dropdown-toggle page-scroll" data-toggle="dropdown">Online Courses<span class="caret"></span></a>
+    <div class="dropdown-menu mega-dropdown-menu my5" id="newmegamenu">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-3">
+    <div id="header_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'header_btnSearch')">
+        
+    <input name="ctl00$header$txtSearch" type="text" id="txtSearch" class="newsearch" placeholder="Search..">
+    <input type="submit" name="ctl00$header$btnSearch" value="" id="header_btnSearch">
+    
+    </div>
+   <h4>POPULAR COURSES</h4>
+    <ul class="list-menu">
+    <li><a href="../technology/JAVA">Java Training</a></li>
+    <li><a href="../technology/python-Training">Python Training</a></li>
+    <li><a href="../technology/net-training">Dot Net Training</a></li>
+    <li><a href="../technology/Android-Training">Android Training</a></li>
+    <li><a href="../technology/PHP-Training">Php Training</a> </li>
+    <li><a href="../technology/sap-training">Sap Training</a> </li>
+    <li><a href="../technology/angularjs">Angular JS Training</a></li>
+    <li><a href="../technology/BIG-DATA-HADOOP-Training">Big Data Training</a></li>
+    <li><a href="../technology/data-science-using-sas-training">Data Science Using Sas Training</a></li>
+    <li><a href="../technology/artificial-intelligence-training">Artificial Intelligence Training</a></li>
+    </ul>
+    </div>
+    <div class="col-md-9">
+    <ul class="tabs">
+    <li><a class="active" href="#section-1">MICROSOFT </a></li>
+    <li><a href="#section-2">ORACLE</a></li>
+    <li><a href="#section-3">ARTIFICIAL INTELLIGENCE</a></li>
+    <li><a href="#section-4">DEVOPS</a></li>
+    <li><a href="#section-5">BIG DATA</a></li>
+    <li><a href="#section-6">CLOUD</a></li>
+    <li><a href="#section-7">RED HAT</a></li>
+    <li><a href="#section-8">PROJECT MANAGEMENT</a></li>
+	<li><a href="#section-9">MOBILITY</a></li>
+    <li><a href="#section-10">GRAPHICS</a></li>
+    <li><a href="#section-11">WEB DESIGN</a></li>
+    <li><a href="#section-12">DIGITAL MARKETING</a></li>
+    <li><a href="#section-13">SOFTWARE TESTING</a></li>
+    <li><a href="#section-14">COMP TIA</a></li>
+    <li><a href="#section-15">MODULAR</a></li>
+    <li><a href="#section-16">DIPLOMA</a></li>
+
+    </ul>
+    <ul class="tabs-content">
+
+    <!-- ORACLE -->
+    <li class="active" id="section-1">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">JAVA</li> </ul> 
+     <ul> <li><a  href="java-training.html">Java EE</a></li> </ul>
+     <ul> <li><a href="java-training.html">Java SE </a></li></ul>
+     <ul> <li class="dropdown-header font-large">Oracle Database</li> </ul> 
+     <ul> <li><a  href="database-administration.html">Database Administration</a></li> </ul>
+     <ul> <li><a href="oracle-data-warehousing.html">Data Warehousing</a></li></ul>
+     <ul> <li><a href="oracle-programing-development.html">Programming and Development </a></li></ul>
+     <ul> <li><a href="/laundry-services/wash-iron">Database Security </a></li></ul>
+     <ul> <li><a  href="my-sql-training.html">MySQL</a></li> </ul>
+     <ul> <li><a href="business-intelligence-training.html">Business Intelligence </a></li></ul>
+     <ul> <li><a  href="oracle-database-12c-ocp-dba-certification-training.html">OCP DBA</a></li> </ul>
+     <ul> <li><a href="oracle-database-12c-rac-administration-training.html">12c: RAC Administration </a></li></ul>
+    </div>
+     <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Oracle Middleware</li> </ul> 
+     <ul> <li><a  href="oracle-weblogic-server-12c-administration-i-training.html">WebLogic Server 12c: Admin</a></li> </ul>
+     <ul> <li><a href="oracle-weblogic-server-11g-advance-administration-training.html">WebLogic: Advanced Administration </a></li></ul>
+     <ul> <li><a  href="oracle-soa-suite-12c-build-composite-applications-training.html">SOA Suite 11g: Administration</a></li> </ul>
+     <ul> <li><a href="oracle-bpm-11g-modeling-training.html">Oracle BPM 11g Modeling </a></li></ul>
+     <ul> <li><a href="oracle-bpm-12c-essentials-training.html">Oracle BPM 12c: Essentials </a></li></ul>
+     </div>
+      <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Oracle Cloud</li> </ul> 
+     <ul> <li><a  href="oracle-em-cloud-control-12c-install-upgrade-training.html">Oracle Enterprise Manager Cloud Control 12c Install & Upgrade</a></li> </ul>
+     <ul> <li><a href="using-oracle-em-cloud-control-12c-training.html">Using Oracle Enterprise Manager Cloud Control 12c </a></li></ul>
+     <ul> <li class="dropdown-header font-large">Oracle Linux</li> </ul> 
+     <ul> <li><a  href="oracle-linux-7-system-administration-training.html">Linux 7: System Administration</a></li> </ul>
+     <ul> <li><a href="oracle-linux-advanced-administration-training.html">Linux Advanced Administration </a></li></ul>
+     </div>
+ 
+    </div>
+    </li>
+
+
+     <!--  Microsoft  -->
+    <li class="active" id="section-2">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Development</li> </ul> 
+     <ul> <li><a  href="../technology/java_se">Beginner Level .NET 4</a></li> </ul>
+     <ul> <li><a href="/laundry-services/wash-iron"> Advance Level .NET 4.5 </a></li></ul>
+     
+    </div>
+
+    <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Windows Azure</li> </ul> 
+     <ul> <li><a href="ms-office-365-training.html"> Microsoft Azure Fundamentals </a></li></ul>
+     <ul> <li><a  href="microsoft-excel-2013-training.html">Developing Microsoft Azure Solutions </a></li> </ul>
+     <ul> <li><a href="microsoft-word-2013-training.html">Microsoft Office Word 2013</a></li></ul>
+     <ul> <li><a href="microsoft-powerpoint-2013-training.html">Microsoft PowerPoint 2013 </a></li></ul>
+     <ul> <li><a href="excel-2013-programming-vba-training.html">Excel 2013 VBA </a></li></ul>
+    </div>
+
+    </div>
+    </li>  <!-- section-2 -->  
+
+  <!--  MOBILE DEVELOPMENT  -->
+    <li class="active" id="section-3">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="ios-apps-xcode-5-development-training.html">iOS Application Development</a></li> </ul>
+     <ul> <li><a href="ios-application-development-swift-training.html"> iOS App Development using Swift </a></li></ul>
+     <ul> <li><a  href="objective-c-programming-concepts-training.html"> Objective-C</a></li> </ul>
+     <ul> <li><a href="phonegap-mobile-app-training.html"> PhoneGap for Mobile Application </a></li></ul>
+     <ul> <li><a  href="google-associate-android-developer-training.html">Google- Associate Android Developer</a></li> </ul>
+
+    </div>
+
+    </div>
+    </li>  <!-- section-3 -->  
+
+
+  <!--  WEB DEVELOPMENT  -->
+    <li class="active" id="section-4">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="html5-css3-training.html">Responsive Web Design</a></li> </ul>
+     <ul> <li><a href="apps-development-angular-js-professionals-training.html"> App Development using AngularJS </a></li></ul>
+     <ul> <li><a  href="bootstrap-framework-training.html">Bootstrap Framework</a></li> </ul>
+     <ul> <li><a href="html5-css3-training.html"> HTML5 and CSS3 </a></li></ul>
+     <ul> <li><a  href="javascript-jquery-training.html">JavaScript and jQuery</a></li> </ul>
+     <ul> <li><a href="php-mysql-developer-training.html"> PHP Developer </a></li></ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-4 -->  
+
+  <!--  CLOUD COMPUTING  -->
+    <li class="active" id="section-5">
+
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="aws-technical-essentials-training.html">Amazon Web Services</a></li> </ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-5 -->  
+
+  <!--  BIG DATA  -->
+    <li class="active" id="section-6">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="hadoop-developer-training.html">Hadoop Developer</a></li> </ul>
+     <ul> <li><a href="master-hadoop-administration-training.html"> Hadoop Administration </a></li></ul>
+     <ul> <li><a  href="apache-hadoop-data-analyst-training.html">Hadoop Data Analyst</a></li> </ul>
+     <ul> <li><a href="mastering-apache-hadoop-training.html"> Mastering Apache Hadoop </a></li></ul>
+     <ul> <li><a  href="hadoop-ecosystem-essentials-training.html">Hadoop Ecosystem Essentials</a></li> </ul>
+     <ul> <li><a href="programming-r-training.html"> Programming with R </a></li></ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-6 -->  
+
+    <!--  POPULAR COURSES  -->
+    <li class="active" id="section-7">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="angular-js-java-web-apps-development-training.html">Develop Java Web Apps with AngularJS</a></li>
+      </ul>
+     <ul> <li><a href="ootp-object-oriented-thought-process-training.html"> Object Oriented Thought Process (OOTP) </a></li>
+     </ul>
+     <ul> <li><a  href="java-persistence-hibernate-training.html">Java Persistence with Hibernate</a></li> 
+     </ul>
+     <ul> <li><a  href="spring-core-training.html">Spring</a></li> 
+     </ul>
+     <ul> <li><a href="spring-mvc-training.html"> Spring MVC </a></li> 
+     </ul>
+     </div>
+     <div class="col-md-4">
+     <ul> <li><a  href="soa-adoption-architecture-fundamentals-training.html">SOA Adoption and Architecture Fundamentals</a></li> </ul>
+     <ul> <li><a  href="mongo-db-training.html">MongoDB</a></li> </ul>
+     <ul> <li><a  href="cassandra-training.html">Cassandra</a></li> </ul>
+     <ul> <li><a  href="spring-hibernate-training.html">Spring & Hibernate</a></li> </ul>
+     <ul> <li><a  href="cloud-fundamentals-training.html">Cloud Fundamentals</a></li> </ul>
+    </div>
+
+
+    </div>
+    </li>  <!-- section-7 -->  
+
+  <!--  DATABASE  -->
+    <li class="active" id="section-8">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Oracle Database</li> </ul> 
+     <ul> <li><a  href="database-administration.html">Database Administration</a></li> </ul>
+     <ul> <li><a href="oracle-data-warehousing.html">Data Warehousing</a></li></ul>
+     <ul> <li><a href="oracle-programing-development.html">Programming and Development </a></li></ul>
+     <ul> <li><a href="/laundry-services/wash-iron">Database Security </a></li></ul>
+     <ul> <li><a  href="my-sql-training.html">MySQL</a></li> </ul>
+     <ul> <li><a href="business-intelligence-training.html">Business Intelligence </a></li></ul>
+     <ul> <li><a  href="oracle-database-12c-ocp-dba-certification-training.html">OCP DBA</a></li> </ul>
+     <ul> <li><a href="oracle-database-12c-rac-administration-training.html">12c: RAC Administration </a></li></ul>
+
+    </div>
+
+    <!-- <div class="col-md-4">
+     <ul> <li class="dropdown-header font-large">Microsoft SQL Server</li> </ul> 
+     <ul> <li><a href="/laundry-services/wash-iron"> Programming with SQL Server  </a></li></ul>
+     <ul> <li class="dropdown-header font-large">SQL Server Administration</li> </ul> 
+    </div>  -->
+
+    </div>
+    </li>  <!-- section-8 -->  
+
+  <!--  PROJECT MANAGEMENT  -->
+    <li class="active" id="section-9">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="pmp-project-management-professional-certification-training.html">PMP</a></li> </ul>
+     <ul> <li><a href="pmp-and-ms-project-2013-combo-training.html"> PMP® and MS project 2013 </a></li></ul>
+     <ul> <li><a href="agile-methodology-training.html"> PMI- Agile Certified Practioner (ACP)</a></li></ul>
+     <ul> <li><a href="professionals-scrum-master-certification-training.html"> Scrum Master Training </a></li></ul>
+     <ul> <li><a  href="microsoft-specialist-managing-project-with-ms-project-2013-training.html">Microsoft Project 2013</a></li> </ul>
+     <ul> <li><a href="microsoft-project-professional-server-2013-combo-training.html"> Microsoft Project & Server 2013 </a></li></ul>
+     <ul> <li><a  href="managing-project-server-2013-training.html">Managing Project Server 2013</a></li> </ul>
+     <ul> <li><a href="six-sigma-yellow-belt-certification-training.html"> Lean Six Sigma Yellow Belt </a></li></ul>
+     <ul> <li><a href="lean-six-sigma-green-belt-certification-training.html"> Lean Six Sigma Green Belt </a></li></ul>
+     <ul> <li><a href="togaf-training.html"> TOGAF 9.1 </a></li></ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-9 -->  
+
+  <!--  ADOBE  -->
+    <li class="active" id="section-10">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="adobe-cc-graphic-design-training.html">Graphic Design</a></li> </ul>
+     <ul> <li><a href="adobe-cc-web-design-training.html"> Web Design </a></li></ul>
+     <ul> <li><a  href="adobe-photoshop-cc-training.html">Photoshop</a></li> </ul>
+     <ul> <li><a href="adobe-dreamweaver-cc-training.html"> Dreamweaver </a></li></ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-10 -->  
+
+  <!--  CMS  -->
+    <li class="active" id="section-11">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="drupal-training.html">Drupal</a></li> </ul>
+     <ul> <li><a href="wordpress-training.html"> Wordpress </a></li></ul>
+     <ul> <li><a  href="joomla-training.html">Joomla</a></li> </ul>
+     <ul> <li><a  href="magento-training.html">Magento</a></li> </ul>
+
+    </div>
+
+    </div>
+    </li>  <!-- section-11 -->  
+
+  <!--  ERP  -->
+    <li class="active" id="section-12">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="sap-abap-training.html">SAP ABAP</a></li> </ul>
+     <ul> <li><a href="sap-basis-training.html"> SAP BASIS </a></li></ul>
+     <ul> <li><a  href="sap_fico-training.html">SAP FICO</a></li> </ul>
+     <ul> <li><a href="sap-hr-training.html"> SAP HR </a></li></ul>
+     <ul> <li><a  href="sap-hd-training.html">SAP HD</a></li> </ul>
+     <ul> <li><a href="sap-pp-training.html"> SAP PP </a></li></ul>
+
+    </div>
+
+    
+    </div>
+    </li>  <!-- section-12 -->  
+
+  <!--  SOFTWARE TESTING  -->
+    <li class="active" id="section-13">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="apache-jmeter-performance-load-testing-training.html">Load Testing with Jmeter</a></li> </ul>
+     <ul> <li><a href="soapui-web-services-training.html"> SoapUI Web Services Testing </a></li></ul>
+     <ul> <li><a  href="certified-software-tester-cste-training.html">Certified Software Tester (CSTE)</a></li> </ul>
+     <ul> <li><a href="owasp-testing-training.html"> OWASP Testing </a></li></ul>
+     <ul> <li><a  href="selenium-2-webdriver-advance-training.html">Selenium</a></li> </ul>
+
+    </div>
+
+    </div>
+    </li>  <!-- section-13 -->  
+
+  <!--  MORE  -->
+    <li class="active" id="section-14">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-4">
+     <ul> <li><a  href="python-training.html">Python</a></li> </ul>
+     <ul> <li><a href="search-engine-optimization-training.html"> SEO Training </a></li></ul>
+     <ul> <li><a href="mean-stack-training.html"> Mean Stack Training </a></li></ul>
+
+    </div>
+
+
+    </div>
+    </li>  <!-- section-14 -->  
+
+   </ul>
+   </div>  
+
+   <!-- Online Tabs end here -->
+   
+   
+    <li class="dropdown mega-dropdown limobileclass"><a href="serv1" class="dropdown-toggle page-scroll" data-toggle="dropdown">Services<span class="caret"></span></a>
+    <div class="dropdown-menu mega-dropdown-menu my6">
+    <div class="container-fluid companydiv">
+     <div class="row">
+    <!-- <div class="col-md-12" style="margin-bottom:20px">
+    <a href="../studentTraining">
+    <div class="col-md-4 borderradiusclass">
+    <div class="col-md-2">
+    <img data-src="./images/Sunbright-Consultancy-profile.png" class="circle-price1">
+    </div>
+    <div class="col-md-10">
+    <h4 class="h4clas">Student Training</h4>
+    <p class="pclass">Get trained and mould your future</p>
+    </div>
+    </div>
+    </a>
+    <a href="../fresherTraining">
+    <div class="col-md-4 borderradiusclass">
+    <div class="col-md-2">
+    <img data-src="./images/Sunbright-Consultancy-fresher.png" class="circle-price1">
+    </div>
+    <div class="col-md-10">
+    <h4 class="h4clas">Fresher Training</h4>
+    <p class="pclass">Be able to learn &amp; tread over a Prospective Career Path</p>
+    </div>
+    </div>
+    </a>
+    <a href="../professionalTraining">
+    <div class="col-md-4 borderradiusclass1">
+    <div class="col-md-2">
+    <img data-src="./images/Sunbright-Consultancy-campus-icon.jpg" class="circle-price1">
+    </div>
+    <div class="col-md-10">
+    <h4 class="h4clas">Professional Training</h4>
+    <p class="pclass">Develop New Skills and Boost Your Career</p>
+    </div>
+    </div>
+    </a>
+    </div> -->
+    <div class="col-md-12" style="margin-bottom:20px">
+    <a href="./corporate-training.html">
+    <div class="col-md-4 borderradiusclass">
+    <div class="col-md-2">
+    <img data-src="./images/Sunbright-Consultancy-corpor.png" class="circle-price1">
+    </div>
+    <div class="col-md-10">
+    <h4 class="h4clas">Corporate Training</h4>
+    <p class="pclass">Training plus Experience work together</p>
+    </div>
+    </div>
+    </a>`
+    <a href="./campus-training.html">
+    <div class="col-md-4 borderradiusclass">
+    <div class="col-md-2">
+    <img data-src="./images/Sunbright-Consultancy-uni.png" class="circle-price1">
+    </div>
+    <div class="col-md-10">
+    <h4 class="h4clas">College Campus Training</h4>
+    <p class="pclass">To Bridge the Gap Between the Industry Requirements &amp; College Studies</p>
+    </div>
+    </div>
+    </a>
+    <a href="./overseas-training.html">
+    <div class="col-md-4 borderradiusclass1">
+    <div class="col-md-2">
+    <img data-src="./images/Sunbright-Consultancy-over.png" class="circle-price1">
+    </div>
+    <div class="col-md-10">
+    <h4 class="h4clas">Overseas &amp; Online Training</h4>
+    <p class="pclass">Access Anywhere, Anytime</p>
+    </div>
+    </div>
+    </a>
+    </div>
+   
+    </div>
+    </div>
+    </li>
+       <!--  <li class="navliclass limobileclass regmob" style="margin-left:10px"><a href="./Careers.html" class="lires anclass" style="border-radius:25px"><span>Career</span></a></li> -->
+    <li class="navliclass"><a onclick="loadenquiry()" class="lires anclass" style="border-radius:52px"><span>Get Enquiry</span></a></li>
+    </ul>
+    </div>
+    </div>
+    </nav>

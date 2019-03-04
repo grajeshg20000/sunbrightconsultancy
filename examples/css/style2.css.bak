@@ -1,0 +1,71 @@
+        .social .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translate(0,0);
+            font-size: 45px !important;
+            box-shadow: 0 2px -1px #185895;
+            color: #185895;
+        }
+
+        .g-recaptcha iframe {
+            height: 78;
+        }
+
+        #contact-form, label {
+            font-weight: 300;
+            vertical-align: middle;
+            letter-spacing: 1px;
+            font-size: 13px;
+            color: #fff;
+            font-family: Open Sans,Arial,Helvetica,sans-serif;
+            font-weight: 600;
+            position: relative !important;
+            margin: 0 !important;
+        }
+        <!-- Rajesh Style sheet -->
+        .h1 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #0389ca;
+    font-family: 'gishabold';
+    font-weight: normal;
+  }
+    .course_detail {
+    float: left;
+    width: 96%;
+    background: #e6e6e6;
+    padding: 12px 2%;
+    margin-top: 16px;
+}
+    .table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+    .course_table table tr th.tophead {
+    padding: 0;
+}
+
+  .course_table table tr th {
+    background: #0077b1;
+    font-weight: normal;
+    color: #fff;
+    padding: 12px 1% 10px;
+}
+  user agent stylesheet
+th {
+    font-weight: bold;
+    text-align: -internal-center;
+}
+user agent stylesheet
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+
